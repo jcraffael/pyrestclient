@@ -1,6 +1,6 @@
 import requests
 
-api_url = "http://127.0.0.1:8080/data"
+api_url = "http://10.1.1.2:8080/data"
 try:
     response = requests.get(api_url)
 #except ConnectionRefusedError:
