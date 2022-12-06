@@ -11,7 +11,7 @@ with enc_open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='pyrestclient,
+    name='pyrestclient',
     version="1.0.0",
     description='Athonet Test simple REST client',
     long_description=long_description,
@@ -27,7 +27,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        #'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.9',
         'Topic :: System :: Networking',
         'Operating System :: POSIX :: Linux'
     ],
@@ -35,5 +35,5 @@ setup(
     packages=find_packages(),
     package_data={},
     entry_points={'console_scripts': ['py-rest-client=pyrestclient.pyrestclient:main']},
-    #install_requires=["simplejson"],
+    install_requires=["requests"],
     zip_safe=False)
