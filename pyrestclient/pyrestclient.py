@@ -15,6 +15,7 @@ except requests.exceptions.RequestException as e:
 #    print("code =", r1.status)
 #except socket.gaierror:
 #    print("Error in requesting ")
+print("Successfully connected to the server!")
 try:    
     while True:
         action = input("Please input your action among GET and PUT: ")
